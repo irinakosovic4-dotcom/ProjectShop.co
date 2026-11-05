@@ -365,6 +365,101 @@ button {
     padding: 2px 5px;
 }
 
+@media screen and (max-width : 1440px) {
+
+    .header-sing_up-text {
+            font-size: 12px;
+        }
+    
+        .header-close_sing_up-icon {
+            top: 7px;
+        }
+    
+        .header-main_panel {
+            padding: 24px 0;
+            gap: 30px;
+        }
+    
+        .logo {
+            font-size: 32px;
+        }
+    
+        .header-list {
+            gap: 20px;
+        }
+
+        .header-link {
+            font-size: 14px;
+        }
+    
+        .header-search-wrapper {
+            padding: 10px 12px;
+            border-radius: 52px;
+            gap: 10px;
+        }
+    
+        .header-search_icon {
+            width: 20px;
+        }
+    
+        .header-search {
+            font-size: 14px;
+            width: 300px;
+        }
+    
+        .header-account_btn-wrapper {
+            gap: 10px;
+        }
+}
+
+@media screen and (max-width : 1024px) {
+ 
+        .header-close_sing_up-icon {
+            width: 22px;
+            top: 7px;
+        }
+    
+        .header-main_panel {
+            padding: 24px 0;
+            gap: 20px;
+        }
+    
+        .logo {
+            font-size: 25px;
+        }
+    
+        .header-list {
+            gap: 15px;
+        }
+    
+        .header-link {
+            font-size: 13px;
+        }
+
+        .header-item_shop-icon {
+            width: 18px;
+        }
+    
+        .header-search-wrapper {
+            padding: 8px;
+            border-radius: 52px;
+            gap: 10px;
+        }
+    
+        .header-search_icon {
+            width: 18px;
+        }
+    
+        .header-search {
+            font-size: 12px;
+            width: auto;
+        }
+    
+        .header-account_btn-wrapper {
+            gap: 10px;
+        }
+}
+
 @media screen and (max-width : 768px) {
     .card {
         min-height: auto;
@@ -374,6 +469,10 @@ button {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media screen and (max-width : 425px) {
+    
 }
 
 @media screen and (max-width : 358px) {
