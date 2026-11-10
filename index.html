@@ -1,365 +1,947 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    </head>
-<body>
-    <section class="section sing_up-section">
-        <div class="header-sing_up_request">
-                    <p class="header-sing_up-text">Sign up and get 20% off to your first order. <span class="header-sing_up-special_text">Sign Up Now</span></p>
-                    <button class="header-close_sing_up-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round"
-                        class="header-close_sing_up-icon">
-                        <path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                    </button>
-                </div>
-    </section>
-    <header class="header">
-            <div class="header-container container">
-                <div class="header-main_panel">
-                    <button class="header-burger" aria-label="Open menu">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-         fill="none" stroke="currentColor" stroke-width="2"
-         stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-</button>
-                        <span class="logo header-logo">SHOP.CO</span>
-                        <nav class="header-navigation">
-                        <ul class="header-list">
-                            <li class="header-item">
-                                <div class="header-item_shop-wrapper">
-                                    <p class="header-link">Shop</p>
-                                    <button class="header-item_shop">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="header-item_shop-icon">
-                                <path d="m6 9 6 6 6-6"/></svg>
-                            </button>
-                                </div>
-                            </li>
-                            <li class="header-item"><a href="#" class="header-link">On Sale</a></li>
-                            <li class="header-item"><a href="#" class="header-link">New Arrivals</a></li>
-                            <li class="header-item"><a href="#" class="header-link">Brands</a></li>
-                        </ul>
-                        </nav>
-                        <div class="header-search-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="header-search_icon">
-                                <path d="m21 21-4.34-4.34"/>
-                                <circle cx="11" cy="11" r="8"/></svg>
-                            <div>
-                                <input type="text" placeholder="Search for products..." class="header-search">
-                            </div>
-                        </div>
-                        <div class="header-account_btn-wrapper">
-                            <button class="header-account_profile">
-                                <svg xmlns="http://www.w3.org/2000/svg" 
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="header-account_profile_icon">
-                                <path d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18"/>
-                                <path d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25"/>
-                                <circle cx="18" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></svg>
-                            </button>
-                            <button class="header-account_purchase">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="header-account_purchase_icon">
-                                <circle cx="12" cy="12" r="10"/>
-                                <circle cx="12" cy="10" r="3"/>
-                                <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>
-                            </button>
-                    </div>
-                </div>
-            </div>
-    </header>
-    <main>
-    <section class="Hero"></section>
-   <section class="card">
-    <div class="container card__container">
-        <h2 class="card__trend-name">NEW ARRIVALS</h2>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<section class="section sing_up-section">
+			<div class="header-sing_up_request">
+				<p class="header-sing_up-text">
+					Sign up and get 20% off to your first order.
+					<span class="header-sing_up-special_text">Sign Up Now</span>
+				</p>
+				<button class="header-close_sing_up-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="header-close_sing_up-icon"
+					>
+						<path d="M18 6 6 18" />
+						<path d="m6 6 12 12" />
+					</svg>
+				</button>
+			</div>
+		</section>
+		<header class="header">
+			<div class="header-container container">
+				<div class="header-main_panel">
+					<button class="header-burger" aria-label="Open menu">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</button>
+					<span class="logo header-logo">SHOP.CO</span>
+					<nav class="header-navigation">
+						<ul class="header-list">
+							<li class="header-item">
+								<div class="header-item_shop-wrapper">
+									<p class="header-link">Shop</p>
+									<button class="header-item_shop">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="header-item_shop-icon"
+										>
+											<path d="m6 9 6 6 6-6" />
+										</svg>
+									</button>
+								</div>
+							</li>
+							<li class="header-item">
+								<a href="#" class="header-link">On Sale</a>
+							</li>
+							<li class="header-item">
+								<a href="#" class="header-link">New Arrivals</a>
+							</li>
+							<li class="header-item">
+								<a href="#" class="header-link">Brands</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-search-wrapper">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="header-search_icon"
+						>
+							<path d="m21 21-4.34-4.34" />
+							<circle cx="11" cy="11" r="8" />
+						</svg>
+						<div>
+							<input
+								type="text"
+								placeholder="Search for products..."
+								class="header-search"
+							/>
+						</div>
+					</div>
+					<div class="header-account_btn-wrapper">
+						<button class="header-account_profile">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="header-account_profile_icon"
+							>
+								<path
+									d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18"
+								/>
+								<path
+									d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25"
+								/>
+								<circle cx="18" cy="20" r="2" />
+								<circle cx="8" cy="20" r="2" />
+							</svg>
+						</button>
+						<button class="header-account_purchase">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="header-account_purchase_icon"
+							>
+								<circle cx="12" cy="12" r="10" />
+								<circle cx="12" cy="10" r="3" />
+								<path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="Hero"></section>
+			<section class="card">
+				<div class="container card__container">
+					<h2 class="card__trend-name">NEW ARRIVALS</h2>
 
-        <ul class="card__list">
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_1-x1.jpg"
-                        srcset="./image/card_1-x1.jpg 1x,
-            ./image/card_1-x2.jpg 2x"
-                        alt="Футболка"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">T-shirt with Tape Details</h3>
-                    <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true">
-                            <img src="./image/Star-1.svg" class="card__star-svg">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg">
-                            <img src="./image/Star-2.svg" class="card__star-svg">
-                         4.5/5</span>
-                    </div>
-                    <span class="card__price">$120</span>
-                </div>
-            </li>
+					<ul class="card__list">
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_1-x1.jpg"
+									srcset="./image/card_1-x1.jpg 1x, ./image/card_1-x2.jpg 2x"
+									alt="Футболка"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">T-shirt with Tape Details</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true">
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-2.svg" class="card__star-svg" />
+										4.5/5</span
+									>
+								</div>
+								<span class="card__price">$120</span>
+							</div>
+						</li>
 
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_2-x1.png"
+									srcset="./image/card_2-x1.png x1, ./image/card_2-x2.png x2"
+									alt="jeans"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">SKINNY FIT JEANS</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true">
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-2.svg" class="card__star-svg" />
+										3.5/5</span
+									>
+								</div>
+								<div class="card__price-container">
+									<span class="card__price">$240</span>
+									<span class="card__price-old">$260</span>
+									<button class="card__sale">-20%</button>
+								</div>
+							</div>
+						</li>
 
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_2-x1.png"
-                        srcset="./image/card_2-x1.png x1, ./image/card_2-x2.png x2"
-                        alt="jeans"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">SKINNY FIT JEANS</h3>
-                   <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg">
-                            <img src="./image/Star-2.svg" class="card__star-svg">
-                         3.5/5</span>
-                        </div>
-                        <div class="card__price-container">
-                    <span class="card__price">$240</span>
-                    <span class="card__price-old">$260</span>
-                    <button class="card__sale">-20%</button>
-                    </div>
-                </div>
-            </li>
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_3-x1.jpg"
+									srcset="./image/card_3-x1.jpg 1x, ./image/card_3-x2.jpg 2x"
+									alt="shirt"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">CHECKERED SHIRT</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true">
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-2.svg" class="card__star-svg" />
+										4.5/5</span
+									>
+								</div>
+								<span class="card__price">$180</span>
+							</div>
+						</li>
 
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_3-x1.jpg"
-                        srcset="./image/card_3-x1.jpg 1x,
-            ./image/card_3-x2.jpg 2x"
-                        alt="shirt"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">CHECKERED SHIRT</h3>
-                    <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true">
-                            <img src="./image/Star-1.svg" class="card__star-svg">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg">
-                            <img src="./image/Star-2.svg" class="card__star-svg">
-                         4.5/5</span>
-                    </div>
-                    <span class="card__price">$180</span>
-                </div>
-            </li>
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_4-x1.jpg"
+									srcset="./image/card_4-x1.jpg 1x, ./image/card_4-x2.jpg 2x"
+									alt="T-shirt"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">SLEEVE STRIPED T-SHIRT</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true">
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-2.svg" class="card__star-svg" />
+										4.5/5</span
+									>
+								</div>
+								<div class="card__price-container">
+									<span class="card__price">$130</span>
+									<span class="card__price-old">$160</span>
+									<button class="card__sale">-30%</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="card__container-btn">
+						<button class="card__view-btn">View All</button>
+					</div>
+				</div>
+			</section>
 
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_4-x1.jpg"
-                        srcset="./image/card_4-x1.jpg 1x,
-            ./image/card_4-x2.jpg 2x"
-                        alt="T-shirt"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">SLEEVE STRIPED T-SHIRT</h3>
-                    <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true">
-                            <img src="./image/Star-1.svg" class="card__star-svg">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg">
-                            <img src="./image/Star-2.svg" class="card__star-svg">
-                         4.5/5</span>
-                    </div>
-                     <div class="card__price-container">
-                    <span class="card__price">$130</span>
-                    <span class="card__price-old">$160</span>
-                    <button class="card__sale">-30%</button>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="card__container-btn">
-        <button class="card__view-btn">View All</button>
-        </div>
-    </div>
-</section>
-  
+			<section class="card">
+				<div class="container card__container">
+					<h2 class="card__trend-name">NEW ARRIVALS</h2>
 
+					<ul class="card__list">
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_5-x1.png"
+									alt="shirt"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">VERTICAL STRIPED SHIRT</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true">
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										4.5/5</span
+									>
+								</div>
+								<div class="card__price-container">
+									<span class="card__price">$212</span>
+									<span class="card__price-old">$232</span>
+									<button class="card__sale">-20%</button>
+								</div>
+							</div>
+						</li>
 
-    <section class="card">
-        <div class="container card__container">
-        <h2 class="card__trend-name">NEW ARRIVALS</h2>
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_6-x1.png"
+									alt="shirt"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">COURAGE GRAPHIC T-SHIRT</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true"
+										><img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										4.0/5</span
+									>
+								</div>
+								<span class="card__price">$145</span>
+							</div>
+						</li>
 
-        <ul class="card__list">
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_5-x1.png"
-                        alt="shirt"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">VERTICAL STRIPED SHIRT</h3>
-                    <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true">
-                            <img src="./image/Star-1.svg" class="card__star-svg">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                         4.5/5</span>
-                    </div>
-                    <div class="card__price-container">
-                    <span class="card__price">$212</span>
-                    <span class="card__price-old">$232</span>
-                    <button class="card__sale">-20%</button>
-                    </div>
-                    </div>
-            </li>
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_7-x1.png"
+									alt="Футболка"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">LOOSE FIT BERMUDA SHORTS</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true">
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										3.0/5</span
+									>
+								</div>
+								<span class="card__price">$80</span>
+							</div>
+						</li>
 
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_6-x1.png"
-                        alt="shirt"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">COURAGE GRAPHIC T-SHIRT</h3>
-                    <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true"><img src="./image/Star-1.svg" class="card__star-svg">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg"> 4.0/5</span>
-                    </div>
-                    <span class="card__price">$145</span>
-                </div>
-            </li>
+						<li class="card__item">
+							<div class="card__image-wrapper">
+								<img
+									src="./image/card_8-x1.png"
+									alt="Футболка"
+									class="card__image"
+								/>
+							</div>
+							<div class="card__body">
+								<h3 class="card__title-name">FADED SKINNY JEANS</h3>
+								<div class="card__rating">
+									<span class="card__stars" aria-hidden="true"
+										><img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-1.svg" class="card__star-svg" />
+										<img src="./image/Star-2.svg" class="card__star-svg" />
+										4.5/5</span
+									>
+								</div>
+								<span class="card__price">$210</span>
+							</div>
+						</li>
+					</ul>
+					<div class="card__container-btn">
+						<button class="card__view-btn">View All</button>
+					</div>
+				</div>
+			</section>
 
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_7-x1.png"
-                        alt="Футболка"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">LOOSE FIT BERMUDA SHORTS</h3>
-                    <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg"> 3.0/5</span>
-                    </div>
-                    <span class="card__price">$80</span>
-                </div>
-            </li>
+			<section class="galerry">
+				<div class="container galerry__container">
+					<h2 class="galerry__name">BROWSE BY dress STYLE</h2>
 
-            <li class="card__item">
-                <div class="card__image-wrapper">
-                    <img
-                        src="./image/card_8-x1.png"
-                        alt="Футболка"
-                        class="card__image"
-                    >
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title-name">FADED SKINNY JEANS</h3>
-                    <div class="card__rating">
-                        <span class="card__stars" aria-hidden="true"><img src="./image/Star-1.svg" class="card__star-svg">
-                             <img src="./image/Star-1.svg" class="card__star-svg">
-                              <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-1.svg" class="card__star-svg">
-                               <img src="./image/Star-2.svg" class="card__star-svg"> 4.5/5</span>
-                    </div>
-                    <span class="card__price">$210</span>
-                </div>
-            </li>
-        </ul>
-         <div class="card__container-btn">
-        <button class="card__view-btn">View All</button>
-        </div>
-    </div>
-    </section>
+					<ul class="galerry__list">
+						<li class="galerry__card galerry__card-smail">
+							<h3 class="name__galerry-card">Casual</h3>
+							<img
+								src="./image/galerry-1.jpg"
+								alt=""
+								class="galerry__image-wrapper"
+							/>
+						</li>
 
-    <section class="galerry">
-          <div class="container galerry__container">
-            <h2 class="galerry__name">BROWSE BY dress STYLE</h2>
+						<li class="galerry__card galerry__card-large">
+							<h3 class="name__galerry-card">Formal</h3>
+							<img
+								src="./image/galerry-2.jpg"
+								alt=""
+								class="galerry__image-wrapper"
+							/>
+						</li>
+						<li class="galerry__card galerry__card-large">
+							<h3 class="name__galerry-card">Party</h3>
+							<img
+								src="./image/galerry-3.jpg"
+								alt=""
+								class="galerry__image-wrapper"
+							/>
+						</li>
 
-            <ul class="galerry__list">
-                <li class="galerry__card galerry__card-smail">
-                    <h3 class="name__galerry-card">Casual</h3>
-                    <img src="./image/galerry-1.jpg" alt="" class="galerry__image-wrapper">
-                </li>
+						<li class="galerry__card galerry__card-smail">
+							<h3 class="name__galerry-card">Gym</h3>
+							<img
+								src="./image/galerry-4.jpg"
+								alt=""
+								class="galerry__image-wrapper"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container container">
+					<div class="reviews__head">
+						<h2 class="reviews__title">OUR HAPPY CUSTOMERS</h2>
 
-                <li class="galerry__card galerry__card-large">
-                       <h3 class="name__galerry-card">Formal</h3>
-                    <img src="./image/galerry-2.jpg" alt="" class="galerry__image-wrapper">
-                </li>
-                <li class="galerry__card galerry__card-large">
-                       <h3 class="name__galerry-card">Party</h3>
-                    <img src="./image/galerry-3.jpg" alt="" class="galerry__image-wrapper">
-                </li>
+						<div class="reviews__nav">
+							<button
+								id="previousSlideBtn"
+								type="button"
+								aria-label="Previous slide"
+							>
+								<img
+									src="./svg__footer/btn__left.svg"
+									alt=""
+									width="24px"
+									height="24px"
+								/>
+							</button>
+							<button id="nextSlideBtn" type="button" aria-label="Next slide">
+								<img
+									src="./svg__footer/btn__right.svg"
+									alt=""
+									width="24px"
+									height="24px"
+								/>
+							</button>
+						</div>
+					</div>
 
-                <li class="galerry__card galerry__card-smail">
-                       <h3 class="name__galerry-card">Gym</h3>
-                    <img src="./image/galerry-4.jpg" alt="" class="galerry__image-wrapper">
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="customers"></section>
-    <section class="form"></section>
-    </main>
-    <footer class="footer"></footer>
-</body>
+					<div class="embla">
+						<div class="embla__viewport" id="embla">
+							<div class="embla__container" id="slides" aria-live="off">
+								<div class="embla__slide">
+									<article class="reviews__card">
+										<div class="reviews__card-starts">
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+										</div>
+										<h3 class="reviews__card-name">
+											Sarah M.
+											<svg viewBox="0 0 24 24" aria-label="Verified customer">
+												<circle cx="12" cy="12" r="12" fill="#01ab31" />
+												<path
+													d="M7 12.5l3.2 3.2L17 9"
+													fill="none"
+													stroke="#fff"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</h3>
+										<p class="reviews__card-text">
+											"I'm blown away by the quality and style of the clothes I
+											received from Shop.co. From casual wear to elegant
+											dresses, every piece I've bought has exceeded my
+											expectations.”
+										</p>
+									</article>
+								</div>
+								<div class="embla__slide">
+									<article class="reviews__card">
+										<div class="reviews__card-starts">
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+										</div>
+										<h3 class="reviews__card-name">
+											Alex K.
+											<svg viewBox="0 0 24 24" aria-label="Verified customer">
+												<circle cx="12" cy="12" r="12" fill="#01ab31" />
+												<path
+													d="M7 12.5l3.2 3.2L17 9"
+													fill="none"
+													stroke="#fff"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</h3>
+										<p class="reviews__card-text">
+											"Finding clothes that align with my personal style used to
+											be a challenge until I discovered Shop.co. The range of
+											options they offer is truly remarkable, catering to a
+											variety of tastes and occasions.”
+										</p>
+									</article>
+								</div>
+								<div class="embla__slide">
+									<article class="reviews__card">
+										<div class="reviews__card-starts">
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+										</div>
+										<h3 class="reviews__card-name">
+											James L.
+											<svg viewBox="0 0 24 24" aria-label="Verified customer">
+												<circle cx="12" cy="12" r="12" fill="#01ab31" />
+												<path
+													d="M7 12.5l3.2 3.2L17 9"
+													fill="none"
+													stroke="#fff"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</h3>
+										<p class="reviews__card-text">
+											"As someone who's always on the lookout for unique fashion
+											pieces, I'm thrilled to have stumbled upon Shop.co. The
+											selection of clothes is not only diverse but also on-point
+											with the latest trends.”
+										</p>
+									</article>
+								</div>
+								<div class="embla__slide">
+									<article class="reviews__card">
+										<div class="reviews__card-starts">
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+										</div>
+										<h3 class="reviews__card-name">
+											Emily R.
+											<svg viewBox="0 0 24 24" aria-label="Verified customer">
+												<circle cx="12" cy="12" r="12" fill="#01ab31" />
+												<path
+													d="M7 12.5l3.2 3.2L17 9"
+													fill="none"
+													stroke="#fff"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</h3>
+										<p class="reviews__card-text">
+											"I'm really impressed with the quality and style of the
+											clothes. Everything looks exactly like the pictures, and
+											the materials feel very comfortable. The delivery was also
+											quick, and I will definitely shop here again!"
+										</p>
+									</article>
+								</div>
+								<div class="embla__slide">
+									<article class="reviews__card">
+										<div class="reviews__card-starts">
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+											<svg
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													d="M12 1.5l3.1 7 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.6l1.7-7.4-5.6-5 7.4-.7z"
+												/>
+											</svg>
+										</div>
+										<h3 class="reviews__card-name">
+											Daniel P.
+											<svg viewBox="0 0 24 24" aria-label="Verified customer">
+												<circle cx="12" cy="12" r="12" fill="#01ab31" />
+												<path
+													d="M7 12.5l3.2 3.2L17 9"
+													fill="none"
+													stroke="#fff"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</h3>
+										<p class="reviews__card-text">
+											"I had a great shopping experience! The clothes are
+											stylish, comfortable, and fit perfectly. I especially
+											liked the attention to detail and the excellent quality.
+											Everything arrived on time, and I'm very happy with my
+											purchase!"
+										</p>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="footer__signup">
+				<h2 class="footer__signup-title">
+					Stay upto date about <br />
+					our latest offers
+				</h2>
+				<form class="footer__form">
+					<label class="footer__field">
+						<svg
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.6"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<rect x="3" y="5" width="18" height="14" rx="3"></rect>
+							<path d="m4 8 8 6 8-6"></path>
+						</svg>
+						<input type="email" placeholder="Enter your email address" />
+					</label>
+					<button class="footer__form-btn" type="button">
+						Subscribe to Newsletter
+					</button>
+				</form>
+			</section>
+			<section>
+				<div class="footer__bg">
+					<div class="container">
+						<div class="footer__top">
+							<div>
+								<h3 class="footer__top-title">SHOP.CO</h3>
+								<p class="footer__top-text">
+									We have clothes that suits your style and which you’re proud
+									to wear. From women to men.
+								</p>
+								<div class="footer__top-socials">
+									<span
+										><img src="./svg__footer/logo-twitter 2.png" alt="" />
+									</span>
+									<span class="active">f </span>
+									<span
+										><img src="./svg__footer/logo-instagram 1.png" alt="" />
+									</span>
+									<span
+										><img src="./svg__footer/logo-github 1.png" alt="" />
+									</span>
+								</div>
+							</div>
+
+							<div class="footer__coll">
+								<h4 class="footer__col-title">Company</h4>
+								<ul>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Features</a></li>
+									<li><a href="#">Works</a></li>
+									<li><a href="#">Career</a></li>
+								</ul>
+							</div>
+							<div class="col">
+								<h4 class="footer__col-title">Help</h4>
+								<ul>
+									<li><a href="#">Customer Support</a></li>
+									<li><a href="#">Delivery Details</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<div class="col">
+								<h4 class="footer__col-title">FAQ</h4>
+								<ul>
+									<li><a href="#">Account</a></li>
+									<li><a href="#">Manage Deliveries</a></li>
+									<li><a href="#">Orders</a></li>
+									<li><a href="#">Payments</a></li>
+								</ul>
+							</div>
+							<div class="col">
+								<h4 class="footer__col-title">Resources</h4>
+								<ul>
+									<li><a href="#">Free eBooks</a></li>
+									<li><a href="#">Development Tutorial</a></li>
+									<li><a href="#">How to - Blog</a></li>
+									<li><a href="#">Youtube Playlist</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__bottom">
+							<p class="footer__bottom-text">
+								Shop.co © 2000-2023, All Rights Reserved
+							</p>
+							<div class="footer__bottom-payments">
+								<span class="pay"
+									><img src="./svg__footer/Visa.png" alt=""
+								/></span>
+								<span class="pay"
+									><img src="./svg__footer/Mastercard.png" alt=""
+								/></span>
+								<span class="pay"
+									><img src="./svg__footer/Paypal.png" alt=""
+								/></span>
+								<span class="pay"
+									><img src="./svg__footer/ Pay.png" alt=""
+								/></span>
+								<span class="pay"
+									><img src="./svg__footer/G Pay.png" alt=""
+								/></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+		<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+		<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+		<script src="./slayder.js"></script>
+	</body>
 </html>
