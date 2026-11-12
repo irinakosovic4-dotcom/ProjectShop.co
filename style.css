@@ -71,6 +71,7 @@ button {
 	top: 0;
 	z-index: 100;
 	border-bottom: 1px solid var(--accent-text-color);
+    background-color: var(--white-back-color);
 }
 
 .header-sing_up_request {
@@ -378,6 +379,8 @@ button {
     gap: 106px;
     padding: 46px 100px;
 }
+
+
 
 .card {
 	min-height: 80vh;
