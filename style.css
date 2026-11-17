@@ -934,10 +934,6 @@ button {
 		}
 }
 
-.card {
-	min-height: 80vh;
-}
-
 .card__image-wrapper {
 	height: auto;
 }
@@ -1094,9 +1090,10 @@ button {
 	display: block;
 }
 
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 426px) {
 	.galerry__list {
 		display: grid;
+        gap: 4px;
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
